@@ -1,0 +1,15 @@
+//composant style global
+@import "./pages/_settings.scss";
+
+//composants global
+@import "./components/_navigation.scss";
+@import "./components/banner.scss";
+@import "./components/_footer.scss";
+
+
+
+@import "./components/about_gallery.scss";
+
+//composants de la page Home
+@import "./components/cardgrid.scss";
+@import "./components/_cards.scss";

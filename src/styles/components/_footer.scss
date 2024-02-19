@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+
+p{
+    color: white;
+    font-family: $font;
+    font-size: $font-l;
+    font-weight: $font-w-m;
+}
+}
+@media (max-width: 768px){
+    .footer{
+        transform: translatey(500px);
+        p{
+        font-size: $font-s;
+        }
+    }
+}
