@@ -13,10 +13,7 @@ const Navigation = () => {
                         <li>A propos</li>
                     </NavLink>
             </ul>
-            {/* <ul>                             
-                <li>Accueil</li>
-                <li>A propos</li>                   
-            </ul> */}
+            
         </div>
     );
 };
