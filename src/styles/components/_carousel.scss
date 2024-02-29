@@ -1,0 +1,37 @@
+
+#slide {
+    display: flex;
+   // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    min-height: 470px;
+    position: relative;
+    margin: auto;
+}
+
+.slide_img {
+    position: absolute;
+    width: 80%;
+    object-fit: cover;
+    height: 500px;
+    border-radius: 30px;
+   // height: 100%;
+    z-index: -1;
+    object-position: center;
+}
+
+/* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
+/* Gestion des fleches du carrousel */
+ #slide .arrow {
+    position: absolute;
+ }
+
+#slide .arrow_left {
+    left: 160px;
+    top:190px;
+}
+
+#slide .arrow_right {
+    right: 160px;
+}

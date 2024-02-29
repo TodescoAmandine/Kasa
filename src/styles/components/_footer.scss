@@ -18,7 +18,8 @@ p{
 }
 @media (max-width: 768px){
     .footer{
-        transform: translatey(500px);
+       // transform: translatey(500px);
+       margin: 0 auto;
         p{
         font-size: $font-s;
         }

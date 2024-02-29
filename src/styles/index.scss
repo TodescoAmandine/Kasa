@@ -15,4 +15,10 @@
 @import "./components/_cards.scss";
 
 //composants de la page About
-@import "./components/accordeon.scss";
+@import "./components/_accordeon.scss";
+
+//composants de la page Error
+@import "./pages/_error.scss";
+
+//composants de la page Logement
+@import "./components/_carousel.scss";

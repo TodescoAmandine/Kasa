@@ -1,57 +1,71 @@
-#contenaire__cards{
-
+#contenaire__cards {
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+     justify-content: center;
     flex-wrap: wrap;
-    //width: 90%;
-    height: 100vh;
-     gap: 50px 60px;
-    //  margin: 50px 30px;
-    margin: 100px;
+    height: auto;
+    gap: 50px 60px;
     padding: 50px;
-
-
-    .cards{
-        width: 340px;
-        height: 340px;
-        border-radius: 10px;
-        position: relative;
-        //background: $color-primary;
-        object-fit: cover;
-      //  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+    max-width: 1240px;
+    margin: 30px auto;
+    box-sizing: border-box;
+  
+    .cards {
+      width: 340px;
+      height: 340px;
+      border-radius: 10px;
+      position: relative;
+      object-fit: cover;
+      overflow: hidden;
+  
+  
+      &::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background:  linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 34%);
+        position: absolute;
+        top: 0;
+      }
     }
-    h2{
+  
+    h2 {
       position: absolute;
       color: white;
       font-family: $font;
       font-size: $font-l;
       font-weight: $font-w-xl;
-      text-decoration: none;  
+      text-decoration: none;
       left: 20px;
       bottom: 10px;
       z-index: 50;
     }
-    .card_cover{
-        object-fit: cover;
-        position: relative;
+  
+    .card_cover {
+      object-fit: cover;
+      position: relative;
     }
-    
-
-}
-@media (max-width: 768px) {
-    #contenaire__cards{    
-        margin: 50px 0;
-        padding: 20px;
-        .cards{
-            width: 100%;
-            height: 200px;
-        }
-        h2{
-            font-size: $font-l;
-            left: 20px;
-            bottom: 10px;
-        }
-
+  
+  
+  }
+  
+  @media (max-width: 768px) {
+    #contenaire__cards {
+      margin: 50px 0;
+      width: 100%;
+      padding: 20px;
+  
+      .cards {
+        width: 100%;
+        height: 200px;
+      }
+  
+      h2 {
+        font-size: $font-l;
+        left: 20px;
+        bottom: 10px;
+      }
+  
     }
-}
+  }
+  

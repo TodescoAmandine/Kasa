@@ -1,21 +1,24 @@
 ul a {
-    list-style-type: none;
-    text-decoration: none;
-    outline: none;
-  }
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
 
-  *::before,::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-  }
-  body{
-    margin: 0;
-    padding: 0;
-  }
- //FONT 
+*::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  //padding: 0 20px;
+}
+
+//FONT
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-  
+
 $font: 'Montserrat', sans-serif;
 
 //FONT SIZE
@@ -26,16 +29,18 @@ $font-m: 14px;
 $font-s: 12px;
 
 //FONT WEIGHT
-$font-w-xl:700;
-$font-w-m:500;
-$font-w-b:400;
+$font-w-xl: 700;
+$font-w-m: 500;
+$font-w-b: 400;
 
 
-//FONT LINE HEIGHT 
-$font-line-xl:43px;
-$font-line-l:27px;
-$font-line-m:20px;
-$font-line-s:17px;
+//FONT LINE HEIGHT
+$font-line-xl: 43px;
+$font-line-l: 27px;
+$font-line-m: 20px;
+$font-line-s: 17px;
 
 //COLORS
 $color-primary: #FF6060;
+
+

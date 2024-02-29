@@ -3,6 +3,8 @@ import Navigation from '../components/Navigation';
 import Banner from '../components/Banner';
 import Accordeon from '../components/Accordeon';
 import Footer from '../components/Footer';
+import aboutData from '../about.json';
+import Card from "../components/Card";
 
 
 
@@ -11,9 +13,11 @@ const About = () => {
         <div>
         <Navigation />
         < Banner imgbanner="./kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"/>
-        <div id='accordeon__container'> 
-        <Accordeon title="Titre 1" icon={<i className="fa-solid fa-angle-up"></i>} content="Contenu 1" />
-        </div> 
+        <div id='accordeon__container'>
+            {aboutData.map((item, index) => (
+                <Accordeon title={item.title} content={item.content} index={index} key={index}/>
+            ))}
+        </div>
         < Footer />
     </div>
 

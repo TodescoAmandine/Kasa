@@ -1,0 +1,41 @@
+.title__error{
+    color: $color-primary;
+    font-size: 288px;
+    font-family: $font;
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
+}
+.h3__error{
+    font-family: $font;
+    font-size: 36px;
+    font-weight: 500;
+    color: $color-primary;
+    text-align: center;
+}
+.p__error{
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 500;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    margin: 100px;
+}
+
+@media (max-width: 768px){
+    .title__error{
+        font-size: 96px;
+        margin: 27px;
+    }
+    .h3__error{
+        font-size: 18px;
+    }
+    .break-on-mobile {
+        display: block;
+      }
+      .p__error{
+        font-size: 14px;
+        white-space: nowrap;
+      }
+}

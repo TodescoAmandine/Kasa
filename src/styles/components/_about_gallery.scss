@@ -1,48 +1,48 @@
-.gallery{
+.gallery {
     display: flex;
     position: relative;
     //background-color: black;
     width: 100%;
-    height:223px ;
+    height: 223px;
     border-radius: 20px;
-
-.gallery__black{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height:223px ;
-    border-radius: 20px;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    margin: 0 80px;
-}
-   img{
-       width: 100%;
-       height:223px ;
-       border-radius: 20px;
-       object-fit: cover;
-       object-position: center;
-       position: relative;
-       opacity: 0.5;
-       box-shadow: 0px 13px 6px -5px rgba(153,153,153,0.9)
-   }
-
-    #tag{  
-        position: absolute;
-        color: white;
-        font-family: $font;
-        font-size: $font-xxl;
-        font-weight: $font-w-xl;
+  
+    .gallery__black {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 223px;
+      border-radius: 20px;
+      background-color: black;
+      align-items: center;
+      justify-content: center;
+      margin: 0 80px;
     }
-
-}
-
-
-#contenaire__cards{
-    width: 80%;
+  
+    img {
+      width: 100%;
+      height: 223px;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+      opacity: 0.5;
+      box-shadow: 0px 13px 6px -5px rgba(153, 153, 153, 0.9)
+    }
+  
+    #tag {
+      position: absolute;
+      color: white;
+      font-family: $font;
+      font-size: $font-xxl;
+      font-weight: $font-w-xl;
+    }
+  
+  }
+  
+  
+  #contenaire__cards {
     height: 829px;
-    background-color:rgba(246, 246, 246, 1);
+    background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
     margin: 50px 120px;
     padding: 50px 0 0 50px;
@@ -51,68 +51,74 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 50px 20px;
     position: relative;
-
-    .cards{
-        width: 340px;
-        height: 340px;
-        border-radius: 10px;
-        position: relative;
-       // background: $color-primary;
+  
+    .cards {
+      width: 340px;
+      height: 340px;
+      border-radius: 10px;
+      position: relative;
+      // background: $color-primary;
       //  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
     }
-    h2{
+  
+    h2 {
       position: absolute;
       color: white;
       font-family: $font;
       font-size: $font-l;
       font-weight: $font-w-xl;
-      text-decoration: none;  
+      text-decoration: none;
       left: 20px;
       bottom: 10px;
     }
-
-}
-@media (max-width: 768px) {
-
+  
+  }
+  
+  @media (max-width: 768px) {
+  
     .gallery {
-            height: 80px;
-            margin-top: 10px;
-       .gallery__black {
-            margin: 0 20px;
-            height: 100px;
-            width: 100%;
-            border-radius: 10px;
-            
-            img{
-                width: 100%;
-                height: 100px;
-                border-radius: 10px;
-            }
-            #tag{
-                font-size: $font-xl;
-                margin-left: 20px;
-            }
+      height: 80px;
+      margin-top: 10px;
+  
+      .gallery__black {
+        margin: 0 20px;
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+  
+        img {
+          width: 100%;
+          height: 100px;
+          border-radius: 10px;
         }
+  
+        #tag {
+          font-size: $font-xl;
+          margin-left: 20px;
+        }
+      }
     }
-
-    #contenaire__cards{    
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin: 40px 0;
-        padding:20px;
-        width: 90%;
-        gap:20px 20px;
-
-        .cards{
-            width: 100%;
-            height: 200px;
-        }
-        h2{
-            font-size: $font-l;
-            left: 20px;
-            bottom: 10px;
-        }
-
+  
+    #contenaire__cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin: 40px 0;
+      padding: 20px;
+      width: 90%;
+      gap: 20px 20px;
+  
+      .cards {
+        width: 100%;
+        height: 200px;
+      }
+  
+      h2 {
+        font-size: $font-l;
+        left: 20px;
+        bottom: 10px;
+      }
+  
     }
-}
+  }
+  

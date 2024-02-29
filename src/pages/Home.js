@@ -8,9 +8,11 @@ const Home = () => {
   return (
     <div>
         <Navigation />
-        < Banner imgbanner="./Image_source_1.png" title="Chez vous, partout ailleurs"/>
+        < Banner imgbanner="./Image_source_1.png"  title={ <p>Chez vous,<span className="break-on-mobile" > partout ailleurs</span> </p>}/>
         < CardGrid/>
         < Footer />
+        
+            
     </div>
   );
 };
