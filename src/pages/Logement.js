@@ -3,7 +3,6 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Accordeon from '../components/Accordeon';
 import Error404 from '../components/Error404';
-import Carousel from '../components/Carousel';
 import { useParams } from 'react-router-dom';
 import logements from '../logements.json';
 import Rating from '../components/Rating';
@@ -24,7 +23,6 @@ const Logement = () => {
     return (
         <div>
             <Navigation />
-            <Carousel images={logement.pictures} />
             <DetailsLogements />
             <Rating/>
             <Footer />
