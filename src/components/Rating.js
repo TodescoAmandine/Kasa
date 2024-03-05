@@ -2,16 +2,29 @@ import React from 'react';
 import logements from '../logements.json';
 
 
-const Rating = () => {
-    const id ='0';
-    const logement = logements.find(logement => logement.id===id);
-    return (
-<div>
-    {logement.rating.map}((rating,index)=>())
+function getStars(rating) {
 
-    
-<span className='fa-solid fa-star'></span>  
-</div>
+    rating = parseInt(rating)
+
+    let stars = ''
+
+    for (let rate = 1; rate<=5; rate++) {
+        if(rate <= rating) {
+            stars += '<span class="fa-solid fa-star full"></span>'
+        } else {
+            stars += '<span class="fa-solid fa-star empty"></span>'
+        }
+    }
+
+    return  <div dangerouslySetInnerHTML={{__html: stars}}/>
+
+}
+
+const Rating = ({rating}) => {
+    return (
+        <div>
+            {getStars(rating)}
+        </div>
     );
 };
 

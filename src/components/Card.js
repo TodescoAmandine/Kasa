@@ -1,15 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
-const Card = ({ title, cover }) => {
+const Card = ({title, cover, id}) => {
     return (
         <div className='cards'>
             <div className='cards__shadow'>
-        <NavLink to="/apartment" >    
-            <h2>{title}</h2>
-            <img className="cards" src={cover} alt="" />
-        </NavLink>   
+                <NavLink id='cards__a' to={`/logement/${id}`}>
+                    <h2>{title}</h2>
+                    <img className="cards" src={cover} alt=""/>
+                </NavLink>
+            </div>
         </div>
-    </div>
     )
 }
 

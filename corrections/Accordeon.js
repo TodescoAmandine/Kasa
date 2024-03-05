@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import aboutData from '../about.json';
+import aboutData from '../about.json';
 
 function Accordeon({title, content, index}) {
     //variable pour savoir si accordeon est actif ou pas
@@ -14,7 +14,7 @@ function Accordeon({title, content, index}) {
         setIsOpen(!isOpen);
       };
 
-      //retourne le titre et le contenu de l'accordeon
+    //la fonction map va parcourir le tableau aboutData
     return (
         <div key={index} className={`accordeon ${activeIndex === index && "active"}`}>
             <div className='accordeon__title' onClick={() => handleToggle(index)}>{title}

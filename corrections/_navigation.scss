@@ -8,24 +8,19 @@
 
 
   img {
-    //width: 20%;
-    width: 30%;
-    margin: 20px;
+    width: 20%;
   }
 
   ul {
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    list-style: none;
-    gap: 50px;
   }
 
-  li a  {
+  a li {
     font-family: "Montserrat", sans-serif;
     font-size: $font-xl;
+    margin-right: 50px;
     font-weight: $font-w-m;
-    color: $nav-color;
 
     //&:hover {
     //border-bottom: solid black 2px;
@@ -39,11 +34,12 @@
   &::after {
     content: "";
     height: 2px;
-    width: 100%;
-    background: $nav-color;
+    width: 10px;
+    background: black;
     position: absolute;
-    bottom:0;
-    left: 0;
+    bottom: -10px;
+    left: 30%;
+    transform: translateX(-50%);
     -webkit-animation: anim 0.3s ease forwards;
     animation: anim 0.6s ease forwards;
 
@@ -63,12 +59,10 @@
 
 @media (max-width: 768px) {
   .navigation {
-    padding: 20px;
+    padding: 20px 0;
 
     img {
-     // width: 40%;
-     width: 30%;
-     margin: 0;
+      width: 40%;
     }
 
     a li {

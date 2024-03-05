@@ -1,21 +1,15 @@
 import React from 'react';
-import logements from '../logements.json';
 import Accordeon from './Accordeon';
-import { useParams } from 'react-router-dom';
-import '../styles/components/_accordeon.scss';
-import '../styles/pages/_settings.scss'
 import Rating from './Rating';
 import Carousel from '../components/Carousel';
 import Tags from './Tags';
 
 
-const DetailsLogements = () => {
-    const id ='0';
-    const logement = logements.find(logement => logement.id===id);
+const DetailsLogements = ({logement}) => {
 
     return (
         <div className='details__container'>
-            <Carousel images={logement.pictures} />
+            <Carousel images={logement.pictures}/>
             <div className='details__content'>
                 <div className='details__content--infos'>
                     <h1 className='details__content--title'>{logement.title}</h1>
@@ -27,17 +21,19 @@ const DetailsLogements = () => {
                 <div className='details__host'>
                     <div className='details__host--info'>
                         <p className='details__host--name'>{logement.host.name}</p>
-                        <img className='details__host--image' src={logement.host.picture} alt="" />
+                        <img className='details__host--image' src={logement.host.picture} alt=""/>
                         <div className='details__host--rating'>
-                            <Rating/>
+                            <Rating rating={logement.rating}/>
                         </div>
                     </div>
                 </div>
             </div>
-                    <div className='details__host--accordeon'>
-                        <Accordeon title="Description" content={logement.description} />
-                        <Accordeon title="Equipement" content={logement.equipments} />
-                     </div>
+            <div className='details__host--accordeon' id="accordeon__container">
+                <Accordeon title="Description" content={logement.description}/>
+                <Accordeon title="Equipement" content={logement.equipments.map((equipment, id) => {
+                    return (<span key={id}>{equipment}</span>)
+                })}/>
+            </div>
         </div>
     );
 };

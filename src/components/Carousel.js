@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import left from '../assets/img/arrow_left.png';
+import right from '../assets/img/arrow_right.png'
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -15,9 +16,9 @@ const Carousel = ({ images }) => {
 
   return (
     <div id='slide' >
-      <img className='arrow arrow_left' src='arrow_left.png' alt='arrow-left' onClick={prevImage} />
+      <img className='arrow arrow_left' src={left} alt='arrow-left' onClick={prevImage} />
       <img className='slide_img' src={images[currentImageIndex]} alt="" />
-      <img className='arrow arrow_right' src='arrow_right.png' alt='arrow-left' onClick={nextImage} />
+      <img className='arrow arrow_right' src={right} alt='arrow-left' onClick={nextImage} />
     </div>
   );
 };
