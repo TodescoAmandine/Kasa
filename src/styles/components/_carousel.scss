@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 25px;
    // height: 100%;
     z-index: -1;
     object-position: center;
@@ -28,10 +28,29 @@
  }
 
 #slide .arrow_left {
-    left: 160px;
+    left: 10px;
     top:190px;
 }
 
 #slide .arrow_right {
-    right: 160px;
+    right: 10px;
+}
+@media (max-width: 768px) {
+
+    #slide{
+      min-height: 250px;
+    }
+    .slide_img{
+      height: 255px;
+        border-radius: 10px;
+    }
+    #slide .arrow_right {
+        width: 15px;
+        right: 5px;
+    }
+    #slide .arrow_left {
+        top:110px;
+        width: 30px;
+        left: 0px;
+    }
 }

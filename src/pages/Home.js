@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
         <Navigation />
-        < Banner imgbanner="../assets/img/Image_source_1.png" title={ <span>Chez vous,<span className="break-on-mobile" > partout ailleurs</span> </span>}/>
+        < Banner imgbanner={"../assets/img/Image_source_1.png"} title={ <span>Chez vous,<span className="break-on-mobile" > partout ailleurs</span> </span>}/>
         < CardGrid/>
         < Footer />
 

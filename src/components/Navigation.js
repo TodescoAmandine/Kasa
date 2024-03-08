@@ -6,14 +6,14 @@ const Navigation = () => {
     return (
         <div className='navigation'>
             <img src={Logo} alt="logo kasa"/>
-            <ul>
-                <li>
+            <ul className='navigation__ul'>
+                <li className='navigation__li'>
                     <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         Accueil
                     </NavLink>
 
                 </li>
-                <li>
+                <li className='navigation__li'>
                     <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         A propos
                     </NavLink>
