@@ -1,5 +1,4 @@
 import React from 'react';
-import logements from '../logements.json';
 
 
 function getStars(rating) {

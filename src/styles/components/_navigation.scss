@@ -9,7 +9,6 @@
 
   img {
     width: 20%;
-   // width: 30%;
     margin: 20px;
   }
 
@@ -26,10 +25,6 @@
     font-size: $font-xl;
     font-weight: $font-w-m;
     color: $nav-color;
-
-    //&:hover {
-    //border-bottom: solid black 2px;
-    //}
   }
 }
 
@@ -66,7 +61,6 @@
     padding: 20px;
 
     img {
-     // width: 40%;
      width: 30%;
      margin: 0;
     }

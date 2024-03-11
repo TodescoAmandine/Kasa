@@ -9,7 +9,7 @@
     margin: 20px;
 
 
-    //DETAILS INFOS LOCALISATION
+//////DETAILS INFOS LOCALISATION
     .details__content--title {
       font-family: $font;
       font-size: 36px;
@@ -28,8 +28,6 @@
       display: flex;
       flex-direction: row;
       gap: 10px;
-      // justify-content: space-around;
-      // margin: 20px 0;
     }
 
     .details__content--tag {
@@ -47,7 +45,7 @@
       height: 25px;
     }
 
-    //DETAILS HOST
+//////DETAILS HOST
     .details__host {
       display: flex;
       flex-direction: column;
@@ -87,6 +85,7 @@
     }
   }
 
+//////DETAILS ACCORDEON
   .details__host--accordeon#accordeon__container {
     display: flex;
     flex-direction: row;
@@ -109,6 +108,7 @@
   display: block;
   margin: 10px;
 
+  //////DETAILS INFOS LOCALISATION
     .details__content--title {
       font-size: 18px;
       width: 300px;      
@@ -122,6 +122,8 @@
       width: auto;
       border-radius: 5px;
     }
+
+//////DETAILS HOST
     .details__host{
       display: flex;
     }
@@ -147,11 +149,10 @@
     }
   } 
   
-  
+//////DETAILS ACCORDEON  
   .details__container .details__host--accordeon#accordeon__container {
     display: block;
-    margin:0;
-   
+    margin:30px 0 30px 0;   
   }
 
  

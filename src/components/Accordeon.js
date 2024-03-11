@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import aboutData from '../about.json';
 
 function Accordeon({title, content, index}) {
     //variable pour savoir si accordeon est actif ou pas

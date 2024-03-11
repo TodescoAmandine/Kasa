@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: center;
 
-
-
 p{
     color: white;
     font-family: $font;
@@ -16,9 +14,9 @@ p{
     font-weight: $font-w-m;
 }
 }
+
 @media (max-width: 768px){
     .footer{
-       // transform: translatey(500px);
        margin: 0 auto;
         p{
         font-size: $font-s;
