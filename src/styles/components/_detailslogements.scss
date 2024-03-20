@@ -29,6 +29,11 @@
       flex-direction: row;
       gap: 10px;
     }
+    .tags-row {
+      display: flex;
+      flex-direction: row;
+      gap: 10px; 
+    }
 
     .details__content--tag {
       color: white;

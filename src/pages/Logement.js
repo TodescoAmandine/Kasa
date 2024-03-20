@@ -12,12 +12,12 @@ const Logement = () => {
     const {id} = useParams();
     // Chercher le id du logement dans le tableau logements
     const logement = logements.find(logement => logement.id === id);
-   // console.log(id, logement);
+   
 
+    // Si le logement n'existe pas, on affiche une page 404
     if (logement === undefined) {
         return <Error/>
     } else {
-        // Si le logement n'existe pas, on affiche une page 404
         return (
             <div>
                 <Navigation/>

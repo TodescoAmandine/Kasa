@@ -14,7 +14,7 @@ const DetailsLogements = ({logement}) => {
                 <div className='details__content--infos'>
                     <h1 className='details__content--title'>{logement.title}</h1>
                     <p className='details__content--location'>{logement.location}</p>
-                    <div className='details__content--tags'><Tags/></div>
+                    <div className='details__content--tags'><Tags tags={logement.tags}/></div>
                 </div>
                 <div className='details__host'>
                     <div className='details__host--info'>
