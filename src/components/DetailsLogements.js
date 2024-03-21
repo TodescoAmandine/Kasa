@@ -28,9 +28,13 @@ const DetailsLogements = ({logement}) => {
             </div>
             <div className='details__host--accordeon' id="accordeon__container">
                 <Accordeon title="Description" content={logement.description}/>
-                <Accordeon title="Equipement" content={logement.equipments.map((equipment, id) => {
-                    return (<span key={id}>{equipment}</span>)
-                })}/>
+                <Accordeon title="Equipement" content={
+  <ul className="no-bullets">
+    {logement.equipments.map((equipment, id) => {
+      return (<li key={id}>{equipment}</li>)
+    })}
+  </ul>
+}/>
             </div>
         </div>
     );
