@@ -34,7 +34,19 @@
     cursor: pointer;
 }
 
-
+.image-number {
+    position: absolute;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 500;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
 @media (max-width: 768px) {
 
     #slide{
